@@ -1,9 +1,7 @@
-import { checkInitialState } from '../utils/validate.js';
-
 export default class Component {
   constructor($target, state = { total: '', digitCount: 0, operation: '' }) {
     this.$target = $target;
-    this.state = checkInitialState(state);
+    this.state = state;
   }
   render() {}
   setState(newState) {

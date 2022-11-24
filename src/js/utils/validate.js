@@ -14,11 +14,3 @@ export const checkCorrectOrder = (total) => {
   }
   return true;
 };
-
-export const checkInitialState = ({ total, digitCount, operation }) => {
-  return {
-    total: total || '',
-    digitCount: digitCount || 0,
-    operation: operation || '',
-  };
-};
